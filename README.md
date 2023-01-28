@@ -1,8 +1,25 @@
-# F7 App Sample
+# Framework 7 Core Typescript Template
+
+## Contents
+This template uses a Framework7 Core example app with a single view, Cordova and Vite bundler.
+
+## Prerequisites
+install framework7-cli, cordova and vite.
+
+```
+npm i framework7-cli -g
+npm i cordova -g
+npm i vite -g
+```
+initialize framework7 app
+```
+framework7 create
+```
+replace the files with the ones in this repo.
 
 ## Framework7 CLI Options
 
-Framework7 app created with following options:
+Framework7 app was created with following options:
 
 ```
 {
@@ -37,19 +54,12 @@ Framework7 app created with following options:
   "customBuild": false
 }
 ```
-
-## Install Dependencies
-
-First of all we need to install dependencies, run in terminal
-```
-npm install
-```
-
 ## NPM Scripts
 
 * 🔥 `start` - run development server
 * 🔧 `dev` - run development server
 * 🔧 `build` - build web app for production
+* 🔧 `preview` - preview production build
 * 📱 `build-cordova` - build cordova app
 
 ## Vite
@@ -58,10 +68,6 @@ There is a [Vite](https://vitejs.dev) bundler setup. It compiles and bundles all
 ## Cordova
 
 Cordova project located in `cordova` folder. You shouldn't modify content of `cordova/www` folder. Its content will be correctly generated when you call `npm run cordova-build-prod`.
-
-
-
-
 
 ## Assets
 
@@ -77,19 +83,8 @@ Or launch UI where you will be able to change icons and splash screens:
 framework7 assets --ui
 ```
 
-
-
 ## Documentation & Resources
 
 * [Framework7 Core Documentation](https://framework7.io/docs/)
-
-
-
 * [Framework7 Icons Reference](https://framework7.io/icons/)
 * [Community Forum](https://forum.framework7.io)
-
-## Support Framework7
-
-Love Framework7? Support project by donating or pledging on:
-- Patreon: https://patreon.com/framework7
-- OpenCollective: https://opencollective.com/framework7
