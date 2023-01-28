@@ -1,9 +1,11 @@
 # Framework 7 Core Typescript Template
 
 ## Contents
+
 This template uses a Framework7 Core example app with a single view, Cordova and Vite bundler.
 
 ## Prerequisites
+
 install framework7-cli, cordova and vite.
 
 ```
@@ -11,11 +13,18 @@ npm i framework7-cli -g
 npm i cordova -g
 npm i vite -g
 ```
-initialize framework7 app
+
+clone this repo
+
 ```
-framework7 create
+git clone https://github.com/missingbr4cket/framework7-core-ts-template <your-project-name>
 ```
-replace the files with the ones in this repo.
+
+install dependencies
+
+```
+npm install
+```
 
 ## Framework7 CLI Options
 
@@ -54,17 +63,19 @@ Framework7 app was created with following options:
   "customBuild": false
 }
 ```
+
 ## NPM Scripts
 
-* 🔥 `start` - run development server
-* 🔧 `dev` - run development server
-* 🔧 `build` - build web app for production
-* 🔧 `preview` - preview production build
-* 📱 `build-cordova` - build cordova app
+- 🔥 `start` - run development server
+- 🔧 `dev` - run development server
+- 🔧 `build` - build web app for production
+- 🔧 `preview` - preview production build
+- 📱 `build-cordova` - build cordova app
 
 ## Vite
 
 There is a [Vite](https://vitejs.dev) bundler setup. It compiles and bundles all "front-end" resources. You should work only with files located in `/src` folder. Vite config located in `vite.config.js`.
+
 ## Cordova
 
 Cordova project located in `cordova` folder. You shouldn't modify content of `cordova/www` folder. Its content will be correctly generated when you call `npm run cordova-build-prod`.
@@ -85,6 +96,6 @@ framework7 assets --ui
 
 ## Documentation & Resources
 
-* [Framework7 Core Documentation](https://framework7.io/docs/)
-* [Framework7 Icons Reference](https://framework7.io/icons/)
-* [Community Forum](https://forum.framework7.io)
+- [Framework7 Core Documentation](https://framework7.io/docs/)
+- [Framework7 Icons Reference](https://framework7.io/icons/)
+- [Community Forum](https://forum.framework7.io)
