@@ -1,14 +1,22 @@
 import Framework7, { getDevice } from 'framework7/bundle';
-import defaultRoutes from './router';
 import App from '../app.f7';
 import cordovaApp from '../js/cordova-app';
 import 'framework7/css/bundle';
 import '../css/icons.css';
 import '../css/app.css';
-import $ from 'dom7';
+import { Router } from './router';
+import Dom7 from 'dom7';
 
-const $$ = $;
-const device = getDevice();
+declare global {
+  interface Window {
+      f7:any;
+  }
+}
+
+var device = getDevice();
+var router = new Router();
+export var $$ = Dom7;
+
 const parameters = {
   name: 'App Test', // App name
   theme: 'auto', // Automatic theme detection
@@ -16,9 +24,7 @@ const parameters = {
   component: App, // App main component
   id: 'it.eng.iride.f7.test.app', // App bundle ID
   // App routes
-  routes: defaultRoutes,
-
-
+  routes: router.getRoutes(),
   // Input settings
   input: {
     scrollIntoViewOnFocus: device.cordova && !device.electron,
@@ -39,5 +45,4 @@ const parameters = {
     },
   },
 }
-
-const app = new Framework7(parameters);
+window.f7 = new Framework7(parameters);

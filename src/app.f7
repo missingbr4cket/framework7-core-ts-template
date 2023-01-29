@@ -1,40 +1,6 @@
 
 <template>
   <div id="app">
-
-    <!-- Left panel with cover effect-->
-    <div class="panel panel-left panel-cover dark panel-init">
-      <div class="view">
-        <div class="page">
-          <div class="navbar">
-            <div class="navbar-bg"></div>
-            <div class="navbar-inner">
-              <div class="title">Left Panel</div>
-            </div>
-          </div>
-          <div class="page-content">
-            <div class="block">Left panel content goes here</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Right panel with reveal effect-->
-    <div class="panel panel-right panel-reveal dark">
-      <div class="view">
-        <div class="page">
-          <div class="navbar">
-            <div class="navbar-bg"></div>
-            <div class="navbar-inner">
-              <div class="title">Right Panel</div>
-            </div>
-          </div>
-          <div class="page-content">
-            <div class="block">Right panel content goes here</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Your main view, should have "view-main" class -->
     <div class="view view-main view-init safe-areas" data-url="/"></div>
 
@@ -93,7 +59,6 @@
               <ul>
                 <li>
                   <a href="#" class="item-link list-button login-button" @click="${alertLoginData}">Sign In</a>
-
                 </li>
               </ul>
               <div class="block-footer">Some text about login information.<br/>Click "Sign In" to close Login Screen</div>
@@ -120,7 +85,7 @@
       $update();
     }
     const alertLoginData = () => {
-      $f7.dialog.alert('Username: ' + username + '<br/>Password: ' + password, () => {
+      $f7.dialog.alert('Usernames: ' + username + '<br/>Password: ' + password, () => {
         $f7.loginScreen.close();
       });
     }

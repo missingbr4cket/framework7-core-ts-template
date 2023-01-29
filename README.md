@@ -94,12 +94,6 @@ Or launch UI where you will be able to change icons and splash screens:
 framework7 assets --ui
 ```
 
-## Kitchen Sink
-
-Framework7's Kitchen Sink for the Core implementation is included, so you can use it to find a variety of ready-made templates, see [Framework7 Kitchen Sink Documentation](https://framework7.io/docs/kitchen-sink).
-
-**NOTE:** the html files in the kitchen sink may have some wrong tags the framework will error out to, e.g. most if not all the `<input>` tags aren't closed, and it causes a crash when the app loads.
-
 ## Documentation & Resources
 
 - [Framework7 Core Documentation](https://framework7.io/docs/)
