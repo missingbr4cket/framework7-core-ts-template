@@ -22,7 +22,7 @@ const parameters = {
   theme: 'auto', // Automatic theme detection
   el: '#app', // App root element
   component: App, // App main component
-  id: 'it.eng.iride.f7.test.app', // App bundle ID
+  id: 'io.f7.test.app', // App bundle ID
   // App routes
   routes: router.getRoutes(),
   // Input settings
